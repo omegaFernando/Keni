@@ -1,0 +1,70 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 4/12/2016, 05:15:11 PM
+    Author     : JoseLuis
+*/
+*{
+    font-family: sans-serif;
+    font-size: 12px;
+    
+}
+body{
+    width: 400px;
+    margin: auto;
+    background-color: #FFFFFF;
+}
+.contacto{
+    border: 1px solid #2E9AFE;
+    border-radius: 6px;
+    padding: 45px 45px 20px;
+    margin-top: 0px;
+    background-color: white;
+    box-shadow: 0px 5px 10px #FFFFFF, 0 0 0 10px #2E9AFE inset;
+}
+.contacto label{
+    display: block;
+    font-weight: bold;
+}
+.contacto div{
+    margin-bottom: 15px;
+}
+.contacto input[type='text'], .contacto textarea{
+    padding: 7px 6px;
+    width: 294px;
+    border: 1px solid #CED5D7;
+    resize: none;
+    box-shadow:0 0 0 3px #81BEF7;
+    margin: 5px 0;
+}
+.contacto input[type='text']:focus, .contacto textarea:focus{
+    outline: none;
+    box-shadow:0 0 0 3px #dde9ec;
+}
+.contacto input[type='submit']{
+    border: 1px solid #81BEF7;
+    box-shadow:0 0 0 3px #EEF5F7;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px white;
+ 
+    background: #e4f1f6;
+    background: -moz-linear-gradient(top, #e4f1f6 0%, #cfe6ef 100%);
+    background: -webkit-linear-gradient(top, #e4f1f6 0%,#cfe6ef 100%);
+}
+.contacto input[type='submit']:hover{
+    background: #edfcff;
+    background: -moz-linear-gradient(top, #edfcff 0%, #cfe6ef 100%);
+    background: -webkit-linear-gradient(top, #edfcff 0%,#cfe6ef 100%);
+}
+.contacto input[type='submit']:active{
+    background: #2ECCFA;
+    background: -moz-linear-gradient(top, #cfe6ef 0%, #edfcff 100%);
+    background: -webkit-linear-gradient(top, #cfe6ef 0%,#edfcff 100%);
+}
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contacto</title>
+        <link rel='stylesheet' href='HojaDeEstilo.css'>
+    </head>
+    <body class="formulario">
+        <!-- Aqui empieza Encabezado y Menú -->
+        <table border="0" width="100%" height="15%">
+                <tr>
+                    
+                    <td><img src="Imagenes/logoKenimin.jpg"></td>
+                    <td align=right valign=top><img src="Imagenes/Usuario.png">
+                    <form name="b-search" action="http://search.blogger.com/">
+                    <input type="text" id="b-query" name="as_q" />
+                    <input type="hidden" name="ie" value="UTF-8" />
+                    <input type="hidden" name="ui" value="blg" />
+                    <input type="hidden" name="bl_url" value="Aquí va tu URL" />
+                    <input type="submit" value="Buscar" alt="Search This Blog" id="b-searchbtn" title="Search this blog with Google Blog Search" 
+                           onclick_fckprotectedatt="%20onclick%3D%22document.forms%5B'b-search'%5D.bl_url.value%3D'Aqu%C3%AD%20va%20tu%20URL'%22" /> 
+                    </form>
+                    </td>
+                </tr>
+            </table>
+    <div id="header">
+        <nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
+            <ul class="nav">
+                <li><a href="PrincipalInicio.html">Inicio</a></li>
+                <li><a href="Asignatura.html">Asignatura</a></li>
+                <li><a href="CrearPreguntas.html">Crear Pregunta</a></li>
+                <li><a href="VerPreguntas.html">Ver Preguntas</a></li>
+                <li><a href="ConsultarDatosDelUsuario.jsp">Perfil</a></li>
+            </ul>
+        </nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
+    </div>
+    <!-- Aqui termina Encabezado y Menú -->
+   
+    <br><br>
+    
+    <br><br>
+    <h1 class="formulario">Crear Preguntas</h1>
+        <form class='contacto'>
+           
+            <div><label>Introduce tu Pregunta:</label><textarea rows='6'></textarea></div>
+            <div><label>Tema:</label><input type='text' value=''></div>
+            <div><label for="listaAsignatura">Asignatura:
+            <input type="text" id="listaAsignatura" placeholde = "Seleccione una Asignatura" list ="asignaturas"/>
+            <datalist id="asignaturas">
+                <option value="Calculo I">
+                <option value="Calculo II">
+                <option value="Base de Datos">
+                <option value="Programación Estructurada">
+                <option value="Programación Orientada a Objetos">
+            </datalist>
+            </label></div>  
+            <div><input type='submit' value='Aceptar'></div>
+        </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+            <center>
+            <img align=center src="Imagenes/PiePag.png">
+            </center>
+        </footer>
+    </body>
+</html>

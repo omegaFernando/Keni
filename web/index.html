@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Iniciar Sesion o Registrar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        
+        function validacion(){
+            var correo= document.getElementById("mail").value;
+            var password= document.getElementById("pass").value;
+            
+            if( correo === "") {
+                alert("Favor de ingresar el Correo");
+                return false;
+            }
+            if( password === "") {
+                alert("Favor de ingresar la Contraseña");
+                return false;
+            }
+            else{
+                alert("cambio loco");
+                return false;
+            }
+            
+        }
+        
+        </script>
+
+    </head>
+    <body>
+        <div style="text-align:center;">
+        <h1>Iniciar sesion o Registrarse</h1>
+        <form action="sesion" method="post" onSubmit="return validacion();">
+        <table style="margin: 0 auto;">
+            <tr>
+            <td colspan=2><img src="Imagenes/Index.jpeg"></td>
+            </tr>
+            <tr>
+                <td>Correo:</td>
+                <td><input type="text" name="email" id="mail"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="pass" id="pass"></td>
+            </tr>
+        </table>
+        <input type="submit" value="Iniciar Sesion">
+        <input type="reset" value="Borrar Datos"><br>        
+        </form>
+        <br>
+        <form action="LlenarRegistro.jsp" method="post">
+            <input type="submit" value="Registrar">
+        </form>
+        </div>
+    </body>
+</html>
